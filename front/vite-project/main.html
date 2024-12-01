@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+
+    <div class="textModalCont" id="textModalCont">
+      <div class="textCont" id="textCont">
+        <h2>Задача: <span id="titleCont"></span></h2>
+        <p id="textContModal"></p>
+        <span id="exitBtn">X</span>
+      </div>
+    </div>
+
+
+    <div class="app" id="app">
+      <header>
+        <div class="head">
+          <h3>To Do List</h3>
+          <button id="exitAccBtn">Exit</button>
+        </div>
+      </header>
+      <div class="toDoCont">
+        <main>
+          <div class="main">
+            <section> <!-- sec-1  -->
+              <div class="sec-1">
+                <form class="addForm">
+                  <div class="inputCont">
+                    <label for="titleUser"></label>
+                    <input id="titleUser" name="titleUser" type="text" placeholder="Заголовок" required>
+
+                    <label for="textListUser"></label>
+                    <textarea name="textListUser" id="textListUser" placeholder="Описание" required></textarea>
+                  </div>
+                  
+                  <button id="sendListBtn">+</button>
+                </form>
+                <form id="redactForm" class="redactForm" style="display: none;">
+                  <h1>Редактируй!</h1>
+                  <label for="updatetext"></label>
+                  <textarea name="updatetext" id="updatetext" placeholder=""></textarea>
+                  
+                  <button id="redactBtn">Изменить</button>
+                </form>
+              </div>
+            </section>
+            <section>  <!-- sec-2  -->
+              <div class="sec-2">
+                <h1>Задачи</h1>
+                <div class="cartPaddCont">
+                  <div id="cartCont" class="cartCont">
+
+                  </div>
+                  <div class="pagg">
+
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

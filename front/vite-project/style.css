@@ -1,0 +1,345 @@
+*, body, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,p,span,label{
+  color: #fff;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  background-color: #1B1A17;
+}
+
+.head{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.head h3{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.head button{
+  padding: 10px 20px;
+  border: 1px solid #FF8303;
+  border-radius: 5px;
+  background-color: #1B1A17;
+  color: #FF8303;
+  margin-top: 5px;
+}
+
+.head button:hover{
+  cursor: pointer;
+  background-color: #2e2d28;
+}
+
+
+.toDoCont{
+  width: 100%;
+}
+
+
+.sec-1{
+  height: 880px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.sec-1 .addForm{
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.sec-1 .addForm button{
+  margin-top: 20px;
+  /* padding: 160px 30px; */
+  height: 380px;
+  width: 80px;
+  border: 2px solid #FF8303;
+  border-radius: 5px;
+  background-color: #1B1A17;
+  color: #FF8303;
+  font-size: 2rem;
+}
+
+.sec-1 .addForm button:hover{
+  cursor: pointer;
+  background-color: #2e2d28;
+}
+
+.inputCont{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #1B1A17;
+}
+
+
+.inputCont input{
+  padding: 5px;
+  width: 300px;
+  height: 50px;
+  border: 2px solid #FF8303;
+  background-color: #1B1A17;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.inputCont input::placeholder{
+  color: #fff;
+}
+
+.inputCont textarea{
+  padding: 5px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #FF8303;
+  background-color: #1B1A17;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.inputCont textarea::placeholder{
+  color: #fff;
+}
+
+
+
+
+
+.main{
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.sec-2{
+  padding: 20px;
+  width: 1400px;
+  border: 1px solid #fff;
+}
+
+.sec-2 h1{
+  margin-bottom: 10px;
+}
+
+
+
+.cartCont{
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  padding: 20px;
+  height: 800px;
+  border: 1px solid #FF8303;
+  overflow-y: auto;
+}
+
+
+.card{
+  padding: 20px;
+  width: 300px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.btnCont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.btnCont button{
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #1B1A17;
+  border: 2px solid #FF8303;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.btnCont button:hover{
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+
+.card h4, p, span{
+  color: black;
+}
+
+.card h4{
+  font-size: 2rem;
+  white-space: normal;
+}
+
+.card span{
+  font-size: 1.2rem;
+}
+
+
+.successCont{
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.successCont p{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.successCont button{
+  cursor: pointer;
+  padding: 5px 20px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+
+
+.textModalCont{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+}
+
+
+.textCont{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: black ;
+  border: 2px solid #FF8303;
+  width: auto;
+  min-width: 350px;
+  height: auto;
+  min-height: 200px;
+  position: fixed;
+  padding: 20px;
+}
+
+
+.textCont h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.textCont span{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.textCont p{
+  color: #fff;
+}
+
+.textModalCont .textCont > span{
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  color: red
+}
+
+.modalBtn{
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #1B1A17;
+  border: 2px solid #FF8303;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.modalBtn:hover{
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.redactForm{
+  height: 400px;
+  width: 450px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+
+.redactForm textarea{
+  color: #fff;
+  width: 300px;
+  height: 250px;
+  background-color: #1B1A17;
+  border: 2px solid #FF8303;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+
+
+.redactForm button{
+  padding: 15px 10px;
+  border: 2px solid #FF8303;
+  border-radius: 5px;
+  background-color: #1B1A17;
+  color: #fff;
+}
+
+.redactForm button:hover{
+  cursor: pointer;
+  background-color: #2e2d28;
+}
